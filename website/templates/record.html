@@ -2,6 +2,23 @@
 
 {% block content %}
 
-<h1>Customer Record</h1>
+<div class="card">
+    <div class="card-header">
+        {{customer_record.first_name}}
+        {{customer_record.last_name}}
+    </div>
+    <div class="card-body">
+      <strong>Email:</strong><p class="card-text">{{customer_record.email}}</p>
+      <strong>Phone:</strong><p class="card-text">{{customer_record.phone}}</p>
+      <strong>Address:</strong><p class="card-text">{{customer_record.address}}</p>
+      <strong>City:</strong><p class="card-text">{{customer_record.city}}</p>
+      <strong>State:</strong><p class="card-text">{{customer_record.state}}</p>
+      <strong>Zipcode:</strong><p class="card-text">{{customer_record.zipcode}}</p>
+      <strong>Created At:</strong><p class="card-text">{{customer_record.created_at}}</p>
+      <strong>ID:</strong><p class="card-text">{{customer_record.id}}</p>
+      <a href="{% url 'home' %}" class="btn btn-primary">Back</a>
+    </div>
+  </div>
+
 
 {% endblock %}
