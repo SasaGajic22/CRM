@@ -18,6 +18,7 @@
       <strong>ID:</strong><p class="card-text">{{customer_record.id}}</p>
       <a href="{% url 'home' %}" class="btn btn-primary">Back</a>
       <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">Delete</a>
+      <a href="{% url 'update_record' customer_record.id %}" class="btn btn-success">Edit</a>
     </div>
   </div>
 
